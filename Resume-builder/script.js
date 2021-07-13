@@ -1,5 +1,4 @@
 function addpro(){
-
 //create node
 let newNode = document.createElement('textarea');
 newNode.classList.add('form-control');
@@ -10,6 +9,33 @@ newNode.setAttribute("placeholder","Enter details of more projects")
 let pro_btn = document.getElementById('pro_out') //iske phle add
 let pro = document.getElementById('pro');  //iske ander
 pro.insertBefore(newNode,pro_btn);
+}
+function addint(){
+    let newNode  = document.createElement('textarea');
+    newNode.classList.add('form-control');
+newNode.classList.add('mt-2');
+newNode.classList.add('profield');
+newNode.setAttribute("placeholder","Enter about your Internship");
+let pro_btn = document.getElementById('int_out') //iske phle add
+let pro = document.getElementById('intern');  //iske ander
+pro.insertBefore(newNode,pro_btn);
+}
+function delint(){
+    let intern = document.getElementById('intern').remove();
+    // let intern = document.getElementById('intern');
+    // let count= document.getElementById('intern').childElementCount;
+    // intern.removeChild(intern.childNodes[count]);
+    document.getElementById('iremove').remove();
+}
+function delpro(){
+    let pro = document.getElementById('pro');
+    let count= document.getElementById('pro').childElementCount;
+    pro.removeChild(pro.childNodes[count]);
+}
+function delco(){
+    let co = document.getElementById('co');
+    let count= document.getElementById('co').childElementCount;
+    co.removeChild(co.childNodes[count]);
 }
 function addco(){
 
@@ -98,11 +124,6 @@ function addco(){
 
        };
 
-       
-       
-
-
-
        // professional
 
        document.getElementById("ObjFieldT").innerHTML= document.getElementById("ObjField").value;
@@ -137,6 +158,15 @@ function addco(){
        document.getElementById("ToolFieldT").innerHTML= document.getElementById("ToolField").value;
        document.getElementById("SubFieldT").innerHTML= document.getElementById("SubField").value;
 
+        //internship 
+        let internship = document.getElementsByClassName("intfield");
+        let content = "";
+
+        for(let intern of internship){
+            content = content + `<li> ${intern.value}</li>`;
+        }
+        document.getElementById('IntFieldTc').innerHTML = content;
+
        //projects
 
        let projects = document.getElementsByClassName("profield");
@@ -159,8 +189,6 @@ function addco(){
        }
 
        document.getElementById("CoFieldT").innerHTML = str2;
-
-
         document.getElementById("cv-form").style.display="none";
         document.getElementById("cv-template").style.display="block";
     }

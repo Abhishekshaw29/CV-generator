@@ -19,177 +19,137 @@
     <div class="container" id="cv-form">
         <h1 class="text-center my-4 mx-4">CV Builder</h1>
         <p class="text-center">By Abhishek Shaw :)</p>
-        <h5 class="text-center"><a href="https://drive.google.com/file/d/1J2qpHVuDwl_Rt12Q8ClOxdeHFT7JGev9/view?usp=sharing" target="_blank">Check Sample Resume here</a></h1>
-        <div class="row my-5">
-            <div class="col-md-6 my-5">
-                <h1>Personal Information</h1>
-                <div class="form-group mt-2">
-                    <label for="nameField">Your Name</label>
-                    <input type="text" name="name" id="nameField" class="form-control" required placeholder=" E.g. Rohan Nath" />
-                </div>
-                <div class="form-group mt-2">
-                    <label for="PhoneField">Phone Number</label>
-                    <input type="tel" name="phone " id="PhoneField" class="form-control"
-                        placeholder=" E.g. 9883059628 (Don't add +91)" pattern="[0-9]{10}" required/>
-                </div>
-                <div class="form-group mt-2">
-                    <label for="EmailField">Email Id</label>
-                    <input type="email" name="mail" id="EmailField" class="form-control"
-                        placeholder=" Enter your Email" required />
-                </div>
-                <div class="form-group mt-2">
-                    <label for="DobField">Date of Birth</label>
-                    <input type="date" name="dob" id="DObField" class="form-control" required />
-                </div>
-                <div class="form-group mt-2">
-                    <label for="AddressField">Address</label>
-                    <textarea name="address" id="AddressField" rows="2" class="form-control"
-                        placeholder=" Enter your Address" required></textarea>
-                </div>
-                <div class="form-group mt-2">
-                    <label for="NationField">Nationality</label>
-                    <input type="text" name="nationality" id="NationField" class="form-control"
-                        placeholder=" E.g. Indian"  required/>
-                </div>
-                <div class="form-group mt-2">
-                    <label for="InterestField">Interest</label>
-                    <input type="text" name="interest" id="InterestField" class="form-control"
-                        placeholder=" E.g. Cricket matches , writing , Reading Books." required/>
-                </div>
-                <div class="form-group mt-2">
-                    <label for="StrengthField">Strength</label>
-                    <input type="text" name="strength" id="StrengthField" class="form-control"
-                        placeholder=" E.g. Adaptibility , Team Worker, Leadership ." required />
-                </div>
-                <div class="form-group mt-2">
-                    <label for="LangField">Langauges Known </label>
-                    <input type="text" name="langauges" id="LangField" class="form-control"
-                        placeholder=" E.g.  English, Bengali , Hindi. " required/>
-                </div>
-                <div class="form-group mt-2">
-                    <label for="PlaceField">Place</label>
-                    <input type="text" name="place" id="PlaceField" class="form-control" placeholder=" kolkata " required />
-                </div>
-                <div class="form-group mt-2">
-                    <label for="dateField">Date</label>
-                    <input type="date" name="date" id="dateField" class="form-control" required />
-                </div>
-                <div class="form-group mt-2">
-                    <label for="ImgField">Choose your Image</label>
-                    <input type="file" name="image" id="ImgField" class="form-control" required/>
-                </div>
-            </div>
-
-            <!-- professional info -->
-            <div class="col-md-6 my-5">
-                <h1>Professional Information</h1>
-                <div class="form-group mt-2">
-                    <label for="ObjField">Career Objective</label>
-                    <textarea name="objective" id="ObjField" class="form-control" placeholder=" E.g.  To work for an organization which provides me the opportunity to explore new areas and gain knowledge in this.
-                    dynamic and disruptive environment." required></textarea>
-                </div>
-                <h5>ACADEMIC QUALIFICATIONS :</h5>
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-info" type="button" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    COLLEGE DETAILS
-                                </button>
-                            </h2>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="container">
-                                    <div class="form-group mt-2">
-                                        <label for="DegreeField1">Degree</label>
-                                        <input type="text" name="degree" id="DegreeField1" class="form-control"
-                                            placeholder=" E.g.  B.tech(Electrical Engineering)" required />
-                                    </div>
-                                    <div class="form-group mt-2">
-                                        <label for="InsField1">Institution</label>
-                                        <input type="text" name="institution" id="InsField1" class="form-control"
-                                            placeholder=" E.g. St.thomas' college of Engineering & Technology,Kolkata" required />
-                                    </div>
-
-                                    <div class="form-group mt-2">
-                                        <label for="BoardField1">Board/University</label>
-                                        <input type="text" name="board" id="BoardField1" class="form-control"
-                                            placeholder=" E.g.  CBSE " required/>
-                                    </div>
-                                    <br>
-                                    <label id="counts">Enter sem and cgpa for Semester : 1</label>
-                                    <div class="form-inline">
-                                        <div class="form-group mt-2">
-                                            <label for="SemField">Sem </label>
-                                            <input type="text" id="SemField" name="Enter Semester"
-                                                placeholder=" E.g. 1st">
-                                            <label for="CgpaField">Cgpa </label>
-                                            <input type="text" id="CgpaField" name="Enter Cgpa"
-                                                placeholder=" E.g. 8.12">
-                                        </div>
-                                    </div>
-
-                                    <div class="container text-center my-2">
-                                        <input type="button" class="btn btn-sm btn-dark" value="Add Sem"
-                                            id="AddSemField">
-                                    </div>
-
-
-                                </div>
-                                <div class="form-group mt-2">
-                                    <label for="YopField">Year of
-                                        passing</label>
-                                    <input type="text" name="yop" id="YopField1" class="form-control"
-                                        placeholder=" E.g. 2022 (persuing) or 2017" required/>
-                                </div>
-                                <!-- new acadamic qualification -->
-
-                            </div>
-                        </div>
+        <h5 class="text-center"><a
+                href="https://drive.google.com/file/d/1J2qpHVuDwl_Rt12Q8ClOxdeHFT7JGev9/view?usp=sharing"
+                target="_blank">Check Sample Resume here</a></h1>
+            <div class="row my-5">
+                <div class="col-md-6 my-5">
+                    <h1>Personal Information</h1>
+                    <div class="form-group mt-2">
+                        <label for="nameField">Your Name</label>
+                        <input type="text" name="name" id="nameField" class="form-control" required
+                            placeholder=" E.g. Rohan Nath" />
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    CLASS XII
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body">
-                                <div class="container">
-                                    <div class="form-group mt-2">
-                                        <label for="DegreeField2">Degree</label>
-                                        <input type="text" name="degree" id="DegreeField2" class="form-control"
-                                            placeholder=" E.g. Higher Secondary (XII)" required/>
-                                    </div>
-                                    <div class="form-group mt-2">
-                                        <label for="InsField2">Institution</label>
-                                        <input type="text" name="institution" id="InsField2" class="form-control"
-                                            placeholder=" E.g. St.thomas School " required />
-                                    </div>
+                    <div class="form-group mt-2">
+                        <label for="PhoneField">Phone Number</label>
+                        <input type="tel" name="phone " id="PhoneField" class="form-control"
+                            placeholder=" E.g. 9883059628 (Don't add +91)" pattern="[0-9]{10}" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="EmailField">Email Id</label>
+                        <input type="email" name="mail" id="EmailField" class="form-control"
+                            placeholder=" Enter your Email" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="DobField">Date of Birth</label>
+                        <input type="date" name="dob" id="DObField" class="form-control" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="AddressField">Address</label>
+                        <textarea name="address" id="AddressField" rows="2" class="form-control"
+                            placeholder=" Enter your Address" required></textarea>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="NationField">Nationality</label>
+                        <input type="text" name="nationality" id="NationField" class="form-control"
+                            placeholder=" E.g. Indian" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="InterestField">Interest</label>
+                        <input type="text" name="interest" id="InterestField" class="form-control"
+                            placeholder=" E.g. Cricket matches , writing , Reading Books." required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="StrengthField">Strength</label>
+                        <input type="text" name="strength" id="StrengthField" class="form-control"
+                            placeholder=" E.g. Adaptibility , Team Worker, Leadership ." required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="LangField">Langauges Known </label>
+                        <input type="text" name="langauges" id="LangField" class="form-control"
+                            placeholder=" E.g.  English, Bengali , Hindi. " required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="PlaceField">Place</label>
+                        <input type="text" name="place" id="PlaceField" class="form-control" placeholder=" kolkata "
+                            required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="dateField">Date</label>
+                        <input type="date" name="date" id="dateField" class="form-control" required />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="ImgField">Choose your Image</label>
+                        <input type="file" name="image" id="ImgField" class="form-control" required />
+                    </div>
+                </div>
 
-                                    <div class="form-group mt-2">
-                                        <label for="BoardField2">Board/University</label>
-                                        <input type="text" name="board" id="BoardField2" class="form-control"
-                                            placeholder=" E.g. CBSE " required />
+                <!-- professional info -->
+                <div class="col-md-6 my-5">
+                    <h1>Professional Information</h1>
+                    <div class="form-group mt-2">
+                        <label for="ObjField">Career Objective</label>
+                        <textarea name="objective" id="ObjField" class="form-control" placeholder=" E.g.  To work for an organization which provides me the opportunity to explore new areas and gain knowledge in this.
+                    dynamic and disruptive environment." required></textarea>
+                    </div>
+                    <h5>ACADEMIC QUALIFICATIONS :</h5>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-info" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        COLLEGE DETAILS
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="form-group mt-2">
+                                            <label for="DegreeField1">Degree</label>
+                                            <input type="text" name="degree" id="DegreeField1" class="form-control"
+                                                placeholder=" E.g.  B.tech(Electrical Engineering)" required />
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label for="InsField1">Institution</label>
+                                            <input type="text" name="institution" id="InsField1" class="form-control"
+                                                placeholder=" E.g. St.thomas' college of Engineering & Technology,Kolkata"
+                                                required />
+                                        </div>
+
+                                        <div class="form-group mt-2">
+                                            <label for="BoardField1">Board/University</label>
+                                            <input type="text" name="board" id="BoardField1" class="form-control"
+                                                placeholder=" E.g.  CBSE " required />
+                                        </div>
+                                        <br>
+                                        <label id="counts">Enter sem and cgpa for Semester : 1</label>
+                                        <div class="form-inline">
+                                            <div class="form-group mt-2">
+                                                <label for="SemField">Sem </label>
+                                                <input type="text" id="SemField" name="Enter Semester"
+                                                    placeholder=" E.g. 1st">
+                                                <label for="CgpaField">Cgpa </label>
+                                                <input type="text" id="CgpaField" name="Enter Cgpa"
+                                                    placeholder=" E.g. 8.12">
+                                            </div>
+                                        </div>
+
+                                        <div class="container text-center my-2">
+                                            <input type="button" class="btn btn-sm btn-dark" value="Add Sem"
+                                                id="AddSemField">
+                                        </div>
+
+
                                     </div>
                                     <div class="form-group mt-2">
-                                        <label for="MarksField2">CGPA / Percentage Obtained</label>
-                                        <input type="text" name="marks" id="MarksField2" class="form-control"
-                                            placeholder=" E.g. 8.6 or 80%" required/>
-                                    </div>
-                                    <div class="form-group mt-2">
-                                        <label for="YopField2">Year of
+                                        <label for="YopField">Year of
                                             passing</label>
-                                        <input type="text" name="yop" id="YopField2" class="form-control"
-                                            placeholder=" E.g. 2022 (persuing) or 2018 " required/>
+                                        <input type="text" name="yop" id="YopField1" class="form-control"
+                                            placeholder=" E.g. 2022 (persuing) or 2017" required />
                                     </div>
                                     <!-- new acadamic qualification -->
 
@@ -197,100 +157,157 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-warning collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        CLASS X
+                                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        CLASS XII
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
                                     <div class="container">
                                         <div class="form-group mt-2">
-                                            <label for="DegreeField3">Degree</label>
-                                            <input type="text" name="degree" id="DegreeField3" class="form-control"
-                                                placeholder=" E.g. Secondary (X)" required />
+                                            <label for="DegreeField2">Degree</label>
+                                            <input type="text" name="degree" id="DegreeField2" class="form-control"
+                                                placeholder=" E.g. Higher Secondary (XII)" required />
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="InsField3">Institution</label>
-                                            <input type="text" name="institution" id="InsField3" class="form-control"
-                                                placeholder="  E.g. Lajpat Institution " required />
+                                            <label for="InsField2">Institution</label>
+                                            <input type="text" name="institution" id="InsField2" class="form-control"
+                                                placeholder=" E.g. St.thomas School " required />
                                         </div>
 
                                         <div class="form-group mt-2">
-                                            <label for="BoardField3">Board/University</label>
-                                            <input type="text" name="board" id="BoardField3" class="form-control"
-                                                placeholder=" E.g. ICSE " required/>
+                                            <label for="BoardField2">Board/University</label>
+                                            <input type="text" name="board" id="BoardField2" class="form-control"
+                                                placeholder=" E.g. CBSE " required />
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="MarksField3">CGPA / Percentage Obtained</label>
-                                            <input type="text" name="marks" id="MarksField3" class="form-control"
-                                                placeholder="8.6 or 80%" required />
+                                            <label for="MarksField2">CGPA / Percentage Obtained</label>
+                                            <input type="text" name="marks" id="MarksField2" class="form-control"
+                                                placeholder=" E.g. 8.6 or 80%" required />
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label for="YopField3">Year of
+                                            <label for="YopField2">Year of
                                                 passing</label>
-                                            <input type="text" name="yop" id="YopField3" class="form-control"
-                                                placeholder="2022 (persuing) or 2017" required/>
+                                            <input type="text" name="yop" id="YopField2" class="form-control"
+                                                placeholder=" E.g. 2022 (persuing) or 2018 " required />
                                         </div>
                                         <!-- new acadamic qualification -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-warning collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            CLASS X
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="form-group mt-2">
+                                                <label for="DegreeField3">Degree</label>
+                                                <input type="text" name="degree" id="DegreeField3" class="form-control"
+                                                    placeholder=" E.g. Secondary (X)" required />
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <label for="InsField3">Institution</label>
+                                                <input type="text" name="institution" id="InsField3"
+                                                    class="form-control" placeholder="  E.g. Lajpat Institution "
+                                                    required />
+                                            </div>
+
+                                            <div class="form-group mt-2">
+                                                <label for="BoardField3">Board/University</label>
+                                                <input type="text" name="board" id="BoardField3" class="form-control"
+                                                    placeholder=" E.g. ICSE " required />
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <label for="MarksField3">CGPA / Percentage Obtained</label>
+                                                <input type="text" name="marks" id="MarksField3" class="form-control"
+                                                    placeholder="8.6 or 80%" required />
+                                            </div>
+                                            <div class="form-group mt-2">
+                                                <label for="YopField3">Year of
+                                                    passing</label>
+                                                <input type="text" name="yop" id="YopField3" class="form-control"
+                                                    placeholder="2022 (persuing) or 2017" required />
+                                            </div>
+                                            <!-- new acadamic qualification -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="form-group mt-2" id="pro">
-                        <label for="ProField">Projects</label>
-                        <textarea name="project" id="ProField" class="form-control profield"
-                            placeholder="Mini project on Single phase induction motor"></textarea>
-                        <!-- add the projects  -->
-                        <div class="container text-center mt-3" id="pro_out">
-                            <button class="btn btn-primary btn-sm" onclick="addpro()">Add</button>
-                        </div>
-                    </div>
-
-                    <div class="form-group mt-2" id="co">
-                        <label for="CoField">CO-CURRICULAR AND EXTRA-CURRICULAR ACTIVITIES :</label>
-                        <textarea name="activity" id="CoField" class="form-control cofield"
-                            placeholder="Industrial training at Emt Megatherm Pvt Ltd."></textarea>
-                        <!-- add more co cirrcular -->
-                        <div class="container text-center mt-3" id="co_out">
-                            <button class="btn btn-primary btn-sm" onclick="addco()">Add</button>
-                        </div>
-                    </div>
-
-                    <div class="Activity my-4">
-                        <h5>TECHINAL SKILLS :</h5>
-                        <div class="container">
-                            <div class="form-group mt-2">
-                                <label for="ToolField">Langauge and Tools </label>
-                                <input type="text" name="tool" id="ToolField" class="form-control"
-                                    placeholder="C , C++ , Spring Boot , Matlab " required/>
+                        <div class="form-group mt-2" id="intern">
+                            <label for="IntField">Internship</label>
+                            <textarea name="project" id="IntField" class="form-control intfield"
+                                placeholder="Mini project on Single phase induction motor"></textarea>
+                            <!-- add the projects  -->
+                            <div class="container text-center mt-3" id="int_out">
+                                <button class="btn btn-primary btn-sm" onclick="addint()">Add</button>
+                                <button class="btn btn-danger btn-sm" onclick="delint()">Remove</button>
                             </div>
-                            <div class="form-group mt-2">
-                                <label for="SubField">Subjects of Preference </label>
-                                <input type="text" name="subField" id="SubField" class="form-control" placeholder=" ELECTRICAL MACHINES, COMPUTER NETWORK
+                        </div>
+                        <div class="form-group mt-2" id="pro">
+                            <label for="ProField">Project</label>
+                            <textarea name="project" id="ProField" class="form-control profield"
+                                placeholder="Mini project on Single phase induction motor"></textarea>
+                            <!-- add the projects  -->
+                            <div class="container text-center mt-3" id="pro_out">
+                                <button class="btn btn-primary btn-sm" onclick="addpro()">Add</button>
+                                <button class="btn btn-danger btn-sm" onclick="delpro()">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-2" id="co">
+                            <label for="CoField">CO-CURRICULAR AND EXTRA-CURRICULAR ACTIVITIES :</label>
+                            <textarea name="activity" id="CoField" class="form-control cofield"
+                                placeholder="Industrial training at Emt Megatherm Pvt Ltd."></textarea>
+                            <!-- add more co cirrcular -->
+                            <div class="container text-center mt-3" id="co_out">
+                                <button class="btn btn-primary btn-sm" onclick="addco()">Add</button>
+                                <button class="btn btn-danger btn-sm" onclick="delco()">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="Activity my-4">
+                            <h5>TECHINAL SKILLS :</h5>
+                            <div class="container">
+                                <div class="form-group mt-2">
+                                    <label for="ToolField">Langauge and Tools </label>
+                                    <input type="text" name="tool" id="ToolField" class="form-control"
+                                        placeholder="C , C++ , Spring Boot , Matlab " required />
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="SubField">Subjects of Preference </label>
+                                    <input type="text" name="subField" id="SubField" class="form-control" placeholder=" ELECTRICAL MACHINES, COMPUTER NETWORK
                                 THEORY, DBMS " required />
+                                </div>
+
                             </div>
 
                         </div>
 
                     </div>
-
                 </div>
             </div>
-        </div>
 
 
 
-        <div class="container text-center my-5">
-            <button class="btn btn-danger btn-lg" onclick="final()">Generate CV</button>
-        </div>
+            <div class="container text-center my-5">
+                <button class="btn btn-danger btn-lg" onclick="final()">Generate CV</button>
+            </div>
 
 
     </div>
@@ -363,12 +380,18 @@
             </tr>
         </table>
         <br>
+        <h5 class="text-uppercase font-weight-bold" id="iremove"><u>Internship</u>:</h5>
+        <ul id="IntFieldTc">
+            <li>
+                hello world
+            </li>
+        </ul>
         <h5 class="text-uppercase font-weight-bold"><u>PROJECTS</u>:</h5>
         <ul id="ProFieldT">
             <li>Final year project on Smart energy monitor based on Arduino which includes measuring facility of utility
                 parameters of Electrical Energy.</li>
         </ul>
-
+        <br>
         <h5 class="font-weight-bold text-uppercase"><u>Technical Skills</u>:</h5>
         <table>
             <tr>
