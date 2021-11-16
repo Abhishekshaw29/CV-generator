@@ -75,6 +75,7 @@ function addco(){
         
         table.innerHTML += template;
         count = count + 1;
+        alert("Enter CGPA FOR SEMESTER "+count);
         document.getElementById("counts").innerHTML = "Enter sem and cgpa for Semester : "+count;
     });
     function generatecv(){
@@ -83,6 +84,7 @@ function addco(){
         // cal avg marks
         var cgpa  = document.getElementsByClassName("gpa");
         let data = [].map.call(cgpa , elem => elem.textContent);
+        console.log(data);
         var avg = 0;
         var sum = 0;
         for(i = 0 ; i < data.length;i++){
@@ -111,12 +113,12 @@ function addco(){
        //set image
 
        let file = document.getElementById("ImgField").files[0];
-       console.log(file);
+    //    console.log(file);
        
        let Reader = new FileReader();
        Reader.readAsDataURL(file);
 
-       console.log(Reader.result);
+    //    console.log(Reader.result);
 
        Reader.onloadend = function(){
 
